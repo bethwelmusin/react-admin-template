@@ -4,7 +4,8 @@ import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
-import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor } from './pages';
+import { Drivers, Dashboard, Employees, Area, Line, Bar, Pie, Financial, Pyramid, Stacked, Editor, Register, Login, Corporates, Invoice, InvoiceList, Request } from './pages';
+
 import './App.css';
 
 import { useStateContext } from './contexts/ContextProvider';
@@ -64,34 +65,27 @@ const App = () => {
               {themeSettings && (<ThemeSettings />)}
 
               <Routes>
-                {/* dashboard  */}
-                <Route path="/" element={(<Ecommerce />)} />
-                <Route path="/ecommerce" element={(<Ecommerce />)} />
-
-                {/* pages  */}
-                <Route path="/orders" element={<Orders />} />
+                <Route path="/" element={<Login />} />
+                <Route path="/Register" element={(<Register />)} />
+                <Route path="/Dashboard" element={(<Dashboard />)} />
+                <Route path="/sidebar" element={(<Sidebar />)} />
+                <Route path="/Drivers" element={(<Drivers />)} />
+                <Route path="/Corporates" element={(<Corporates />)} />
+                <Route path="/Invoice" element={(<Invoice />)} />
+                <Route path="/InvoiceList" element={(<InvoiceList />)} />
+                <Route path="/Request" element={(<Request />)} />
                 <Route path="/employees" element={<Employees />} />
-                <Route path="/customers" element={<Customers />} />
-
-                {/* apps  */}
-                <Route path="/kanban" element={<Kanban />} />
                 <Route path="/editor" element={<Editor />} />
-                <Route path="/calendar" element={<Calendar />} />
-                <Route path="/color-picker" element={<ColorPicker />} />
-
-                {/* charts  */}
                 <Route path="/line" element={<Line />} />
                 <Route path="/area" element={<Area />} />
                 <Route path="/bar" element={<Bar />} />
                 <Route path="/pie" element={<Pie />} />
                 <Route path="/financial" element={<Financial />} />
-                <Route path="/color-mapping" element={<ColorMapping />} />
                 <Route path="/pyramid" element={<Pyramid />} />
                 <Route path="/stacked" element={<Stacked />} />
-
+                <Route path="/footer" element={<Footer />} />
               </Routes>
             </div>
-            <Footer />
           </div>
         </div>
       </BrowserRouter>

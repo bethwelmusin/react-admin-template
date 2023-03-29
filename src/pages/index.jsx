@@ -1,10 +1,7 @@
-export { default as Ecommerce } from './Ecommerce';
-export { default as Kanban } from './Kanban';
-export { default as Orders } from './Orders';
+export { default as Dashboard } from './Dashboard';
 export { default as Employees } from './Employees';
 export { default as Editor } from './Editor';
 export { default as Customers } from './Customers';
-export { default as ColorPicker } from './ColorPicker';
 export { default as Calendar } from './Calendar';
 export { default as Area } from './Charts/Area';
 export { default as Bar } from './Charts/Bar';
@@ -14,4 +11,11 @@ export { default as Line } from './Charts/Line';
 export { default as Pie } from './Charts/Pie';
 export { default as Pyramid } from './Charts/Pyramid';
 export { default as Stacked } from './Charts/Stacked';
+export { default as Register } from './Register';
+export { default as Login } from './Login';
+export { default as Drivers } from './Drivers';
+export { default as Corporates } from './Corporates';
+export { default as Invoice } from './Invoice';
+export { default as Request } from './Request';
+export { default as InvoiceList } from './InvoiceList';
 

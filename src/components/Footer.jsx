@@ -1,10 +1,15 @@
 import React from 'react';
 
 const Footer = () => (
-  <div className="mt-24">
-    <p className="dark:text-gray-200 text-gray-700 text-center m-20">
-      © 2022 All rights reserved by Shoppy.com
-    </p>
+  <div className="h-auto">
+
+    <span className="block text-md text-bold text-gray-500 sm:text-center dark:text-gray-400">
+      © 2023{' '}
+      <a href="/" className="hover:underline">
+        easygo
+      </a>
+      . All Rights Reserved
+    </span>
   </div>
 );
 
